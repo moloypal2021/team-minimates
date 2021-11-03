@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Minimates</title>
+    <link rel="stylesheet" href="./assets/css/tailwind.css">
+    <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+    <!-- ========== Start Heaqder ========== -->
+    <header class="bg-primary p-4" x-data="{navOpen : false}" @click.away="navOpen = false">
+        <div class="container mx-auto md:h-16 md:flex md:justify-center font-semibold">
+            <div class="flex items-center justify-between md:hidden">
+                <a href="#" aria-label="Back to homepage" class="flex items-center"><img
+                        src="https://cdn.shopify.com/s/files/1/0550/6970/4431/files/Skaermbillede_2021-09-28_kl._12.37.45.png?v=1633347251"
+                        style="width: 9rem;"></a>
+
+                <button @click="navOpen = !navOpen" title="Button" type="button" class="p-4 md:hidden"><svg
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+                    </svg>
+                </button>
+
+            </div>
+            <ul class="items-stretch space-y-4 md:space-y-0 md:space-x-12 md:flex text-white mt-4 md:mt-0"
+                :class="navOpen ? '' : 'hidden'">
+                <li class="flex"><a href="" class="flex items-center">FORSIDE</a></li>
+                <li class="flex"><a href="#" class="flex items-center">PRODUKTER</a></li>
+                <li class="md:flex hidden">
+                    <a href="#" aria-label="Back to homepage" class="flex items-center p-2 "><img
+                            src="https://cdn.shopify.com/s/files/1/0550/6970/4431/files/Skaermbillede_2021-09-28_kl._12.37.45.png?v=1633347251"
+                            style="width: 9rem;"></a>
+                </li>
+                <li class="flex"><a href="#" class="flex items-center">OM
+                        OS</a></li>
+                <li class="flex"><a href="#" class="flex items-center">FAQ</a>
+                </li>
+                <li class="flex"><a href="#" class="flex items-center">KONTAKT</a></li>
+            </ul>
+
+
+        </div>
+    </header>
+    <!-- ========== End Heaqder ========== -->
+
+    <!-- ========== Start Client ========== -->
+    <section id="shopify-section-template--15334860161263__suppliers" class="shopify-section">
+        <div class="container mx-auto py-5 px-4">
+            <div class="supplier-section">
+                <p class="text-center font-schoolbell">Find os her</p>
+                <h3 class="text-[29px] text-center text-[#eb6720] font-extrabold"> FORHANDLERE </h3>
+                <div class="flex flex-wrap justify-center"><img class="h-[35px] mx-4 my-2"
+                        src="https://cdn.shopify.com/s/files/1/0550/6970/4431/files/Image_2.png?v=1633087201"><img
+                        class="h-[35px] mx-4 my-2"
+                        src="https://cdn.shopify.com/s/files/1/0550/6970/4431/files/Image_1.png?v=1633087201"><img
+                        class="h-[35px] mx-4 my-2"
+                        src="https://cdn.shopify.com/s/files/1/0550/6970/4431/files/Image_3.png?v=1633087201"><img
+                        class="h-[35px] mx-4 my-2"
+                        src="https://cdn.shopify.com/s/files/1/0550/6970/4431/files/Image_4.png?v=1633087201"><img
+                        class="h-[35px] mx-4 my-2"
+                        src="https://cdn.shopify.com/s/files/1/0550/6970/4431/files/Image_5.png?v=1633087201">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Client ========== -->
+
+
+    <!-- ========== Start Items Showcase ========== -->
+    <section class="container mx-auto px-4">
+        <div class="pt-10 pb-12">
+            <p class="font-schoolbell text-center">Hør hvad andre siger</p>
+            <h3 class="text-[29px] text-[#eb6720] font-extrabold text-center mb-12">ANMELDELSER</h3>
+            <div class="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 max-w-6xl mx-auto">
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0550/6970/4431/files/Component_4_1.png?v=1633346245"
+                        class="mx-auto">
+                    <h3 class="text-center text-[#cb0d1f] text-[30px] pt-4 font-extrabold">
+                        MAGNUS </h3>
+                    <p class="text-center font-schoolbell text-[#cb0d20] text-opacity-40">Multivitamin</p>
+                </div>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0550/6970/4431/files/Component_5_1.png?v=1633346244"
+                        class="mx-auto">
+                    <h3 class="text-center text-[#cb0d1f] text-[30px] pt-4 font-extrabold">
+                        MAGNUS </h3>
+                    <p class="text-center font-schoolbell text-[#cb0d20] text-opacity-40">D3 Vitamin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Items Showcase ========== -->
+
+
+    <!-- ========== Start CTA ========== -->
+    <section class="bg-[#eb6720]">
+        <div class="container mx-auto xl:max-w-6xl px-4 py-12">
+            <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-12 lg:space-x-24 items-center">
+                <div class="md:w-1/2">
+                    <p class="font-schoolbell text-white">Om universet</p>
+                    <h3 class="text-[29px] text-white">LÆR OS AT KENDE</h3>
+                    <p class="text-white"> Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusm. Lorem ipsum dolor sit amet, consectetur adipiscing Eli. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing eli. </p>
+                </div>
+                <div class="w-full md:w-1/2 ">
+                    <img src="https://cdn.shopify.com/s/files/1/0550/6970/4431/files/Component_3_1.png?v=1633344179"
+                        class="w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End CTA ========== -->
+</body>
+
+</html>
