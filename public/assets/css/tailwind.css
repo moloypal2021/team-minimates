@@ -702,6 +702,10 @@ video {
   max-width: 72rem;
 }
 
+.max-w-7xl{
+  max-width: 80rem;
+}
+
 .flex-col{
   flex-direction: column;
 }
